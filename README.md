@@ -4,7 +4,7 @@ Implements bit slice approach for private auctions as described in [2002/189](ht
 
 Uses [tfhe-rs](https://github.com/zama-ai/tfhe-rs) to implement boolean gates using p-encoding technique as described in [2023/1589](https://eprint.iacr.org/2023/1589.pdf).
 
-TFHE parameters are obtained via concrete-optimiser and has 128-bit of security.
+<s>TFHE parameters are obtained via concrete-optimiser and has 128-bit of security.</s> The parameters in this fork are NOT secure.
 
 # Costs
 
