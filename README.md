@@ -12,6 +12,27 @@ Auction circuit runtime increase linearly with $k$ and $n$, where $n$ is no. of 
 
 Since a bid of $k$ bits is represented as $k$ LWE ciphertexts, each bidder needs to upload $k$ LWE ciphertexts.
 
+# Installation 
+```
+cargo install --path .
+```
+
+# Command Line Interface 
+```
+Usage: fhe-auctions [OPTIONS] [COMMAND]
+
+Commands:
+  key-gen
+  help     Print this message or the help of the given subcommand(s)
+
+Options:
+  -r, --read_client                 Use the stored client key
+  -e, --encryptions <ENCRYPTIONS>   A vector of the encrypted values, requires "ciphertext_length"
+  -l, --length <CIPHERTEXT_LENGTH>  The length of the vector of encrypted values, requires "encryptions"
+  -h, --help                        Print help
+  -V, --version                     Print version
+```
+
 # Test
 
 On x86_64 based machines set `tfhe-rs` dependecy in cargo.toml as
