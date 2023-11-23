@@ -6,5 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tfhe = {git = "https://github.com/Janmajayamall/tfhe-rs.git", features = ["boolean", "shortint", "integer", "p-encoding","aarch64-unix"]}
+clap = { version = "^4.3", features = ["derive"] }
+tfhe = {git = "https://github.com/Janmajayamall/tfhe-rs.git", features = ["boolean", "shortint", "integer", "p-encoding", "seeder_unix"]}
 rand = "0.8.5"
+serde = "1.0.192"
+serde_json = "1.0.0"

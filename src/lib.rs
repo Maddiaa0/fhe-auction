@@ -1,6 +1,6 @@
 use tfhe::gadget::{ciphertext::Ciphertext, server_key::ServerKey};
 
-fn auction_circuit(
+pub fn auction_circuit(
     server_key: &ServerKey,
     bids: &Vec<Vec<Ciphertext>>,
     bid_bits: usize,
